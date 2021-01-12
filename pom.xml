@@ -98,6 +98,14 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.2</version>
       </plugin>
+
+      <plugin>
+         <artifactId>maven-war-plugin</artifactId>
+         <version>2.4</version>
+         <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+         </configuration>
+      </plugin>
              
       <plugin>
         <!-- Integration tests are run by failsafe. -->
